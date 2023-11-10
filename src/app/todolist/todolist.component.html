@@ -1,0 +1,94 @@
+<!-- 
+
+
+<div class="container">
+    <h1>To-Do List </h1>
+
+    <hr>
+    <form #taskForm="ngForm" (ngSubmit)="onSubmit(taskForm)">
+        <div class="form-group">
+          <label for="task">Task</label>
+          <input type="text" 
+          class="form-control" 
+          id="task" 
+          placeholder="Enter task" 
+          ngModel name="task" 
+          required>
+          <small *ngIf= "taskForm.invalid && taskForm.dirty" id="errorMessage" class="form-text text-danger">Required Field</small>
+        </div>
+       
+        <button 
+        [disabled]="taskForm.invalid" 
+        id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+
+      <hr>
+
+      <table class="table">
+        <thead>
+          <tr >
+            
+            <th scope="col">Task</th>
+            <th scope="col">Completed</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let t of taskArray; index as i" >
+          
+            <td>{{t.taskName}}</td>
+            <td><input (change)="onCheck(i)" id="myCheckbox" type="checkbox"  ></td>
+            <td><button class="btn btn-danger btn-sm" (click)="onDelete(i)">Delete</button></td>
+          </tr>
+         
+        </tbody>
+      </table>
+</div> -->
+
+
+<div class="container">
+  <h1 class="app-title">To-Do List </h1>
+
+  <hr>
+  <form #taskForm="ngForm" (ngSubmit)="onSubmit(taskForm)">
+      <div class="form-group">
+        <label for="task" class="task-label">Task</label>
+        <input type="text" 
+        class="form-control task-input" 
+        id="task" 
+        placeholder="Enter task" 
+        ngModel name="task" 
+        required>
+        <small *ngIf= "taskForm.invalid && taskForm.dirty" id="errorMessage" class="form-text text-danger error-message">Required Field</small>
+      </div>
+     
+      <button 
+      [disabled]="taskForm.invalid" 
+      id="submitButton" type="submit" class="btn btn-primary submit-button">Submit</button>
+    </form> 
+
+    <hr>
+
+    <table class="table">
+      <thead>
+        <tr >
+          
+          <th scope="col" class="task-header">Task</th>
+          <th scope="col" class="completed-header">Completed</th>
+          <th scope="col" class="delete-header">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let t of taskArray; index as i" >
+        
+          <td class="task-item">{{t.taskName}}</td>
+          <td><input (change)="onCheck(i)" id="myCheckbox" type="checkbox" class="checkbox-input"></td>
+          <td><button class="btn btn-danger btn-sm delete-button" (click)="onDelete(i)">Delete</button></td>
+        </tr>
+       
+      </tbody>
+    </table>
+</div>
+
+
+

@@ -1,0 +1,145 @@
+/* h1{
+    text-align:center;
+    font-size: 2rem;
+}
+
+#submitButton{
+    margin-top: 20px;
+}
+
+#myCheckbox{
+    margin-left: 30px;
+} */
+
+
+
+.container {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e6e6fa; /* light purple shade */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4B0082;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #4B0082;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#errorMessage {
+    display: block;
+    margin-top: 5px;
+    color: red;
+}
+
+#submitButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4B0082;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #4B0082;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-danger {
+    background-color: #4B0082;
+    border: none;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #800080;
+}
+
+#myCheckbox {
+    margin-left: 30px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.app-title {
+    color: #4B0082;
+}
+
+.task-label {
+    color: #4B0082;
+}
+
+.error-message {
+    color: red;
+}
+
+.submit-button {
+    background-color: #4B0082;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+}
+
+.task-header {
+    color: #4B0082;
+}
+
+.completed-header {
+    color: #4B0082;
+}
+
+.delete-header {
+    color: #4B0082;
+}
+
+.task-item {
+    color: #4B0082;
+}
+
+.checkbox-input {
+    margin-left: 30px;
+}
+
+.delete-button {
+    background-color: #4B0082;
+}
+
+.delete-button:hover {
+    background-color: #800080;
+}
