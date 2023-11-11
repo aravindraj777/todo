@@ -59,7 +59,7 @@
         placeholder="Enter task" 
         ngModel name="task" 
         required>
-        <small *ngIf= "taskForm.invalid && taskForm.dirty" id="errorMessage" class="form-text text-danger error-message">Required Field</small>
+        <small *ngIf= "taskForm.invalid && (taskForm.dirty)" id="errorMessage" class="form-text text-danger error-message">Required Field</small>
       </div>
      
       <button 

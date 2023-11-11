@@ -14,12 +14,12 @@
 
 
 .container {
-    width: 50%;
+    width: 100%;
     margin: auto;
     margin-top: 50px;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 30px;
     background-color: #e6e6fa; /* light purple shade */
 }
 
@@ -55,7 +55,7 @@ label {
     width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #4B0082;
     color: #fff;
     font-size: 1rem;
